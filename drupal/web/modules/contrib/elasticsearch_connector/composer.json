@@ -1,0 +1,38 @@
+{
+  "name": "drupal/elasticsearch_connector",
+  "description": "Elasticsearch Connector module for Drupal.",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/project/elasticsearch_connector",
+  "require": {
+    "nodespark/des-connector": "5.x-dev"
+  },
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Nikolay Ignatov",
+      "email": "nignatov@nodespark.com",
+      "homepage": "http://www.nodespark.com",
+      "role": "Creator and Maintainer"
+    },
+    {
+      "name": "Prateek Sachan",
+      "email": "ps@prateeksachan.com",
+      "homepage": "http://prateek.sachan.co",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Lachezar Valchev",
+      "email": "lachezar.valchev@gmail.com",
+      "homepage": "https://drupal.org/u/lachezar.valchev",
+      "role": "Maintainer"
+    },
+    {
+      "name": "See other contributors",
+      "homepage": "https://www.drupal.org/node/2159059/committers"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/elasticsearch_connector",
+    "source": "https://github.com/nodespark/elasticsearch_connector"
+  }
+}

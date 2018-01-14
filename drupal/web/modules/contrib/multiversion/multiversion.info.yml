@@ -1,0 +1,20 @@
+name: Multiversion
+type: module
+description: 'Extends the revision support for content entities.'
+# version: VERSION
+# core: 8.x
+dependencies:
+  - key_value
+  - serialization
+  - conflict
+  - system (>=8.3.0)
+test_dependencies:
+  - paragraphs
+  - entity_reference_revisions
+  - poll
+
+# Information added by Drupal.org packaging script on 2017-12-20
+version: '8.x-1.0-beta7'
+core: '8.x'
+project: 'multiversion'
+datestamp: 1513804988

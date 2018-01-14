@@ -1,0 +1,103 @@
+{
+  "name": "custom-project/drupal-vm",
+  "description": "",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "",
+      "role": ""
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.0",
+    "drupal-composer/drupal-scaffold": "^2.0.0",
+    "cweagans/composer-patches": "^1.0",
+    "drupal/devel": "1.2",
+    "drupal/admin_menu": "3.x-dev",
+    "drupal/pathauto": "^1.0",
+    "drupal/libraries": "3.x-dev",
+    "drupal/webform": "^5.0@RC",
+    "drupal/views_slideshow": "^4.6",
+    "drupal/colorbox": "^1.4",
+    "drupal/media": "1.x-dev",
+    "drupal/xmlsitemap": "^1.0@alpha",
+    "drupal/smtp": "^1.0@beta",
+    "drupal/mimemail": "^1.0@alpha",
+    "drupal/eu_cookie_compliance": "^1.0@beta",
+    "drupal/lcache": "^1.0@alpha",
+    "drupal/simple_oauth": "^3.3",
+    "drupal/config_split": "^1.3",
+    "drupal/contact_block": "^1.4",
+    "drupal/google_analytics": "^2.2",
+    "drupal/mailsystem": "^4.1",
+    "drupal/redirect": "^1.0",
+    "drupal/redirect_404": "^1.0",
+    "drupal/share_everywhere": "^1.1",
+    "drupal/views_slideshow_cycle": "^4.6",
+    "drupal/xmlsitemap_engines": "^1.0@alpha",
+    "drupal/elasticsearch_connector": "^5.0@alpha",
+    "drupal/restui": "^1.15",
+    "drupal/replication": "^1.0@beta",
+    "drupal/relaxed": "^1.0@beta",
+    "drupal/pwa": "1.x-dev",
+    "drupal/paragraphs": "^1.2"
+  },
+  "require-dev": {
+    "jcalderonzumba/gastonjs": "~1.0.2",
+    "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+    "mikey179/vfsStream": "~1.2",
+    "symfony/css-selector": "~2.8",
+    "behat/behat": "3.*@stable",
+    "behat/mink": "1.*@stable",
+    "behat/mink-extension": "*",
+    "behat/mink-goutte-driver": "*",
+    "behat/mink-selenium2-driver": "*",
+    "drupal/coder": "dev-8.x-2.x",
+    "drupal/drupal-extension": "3.3.0",
+    "phpmd/phpmd": "@stable",
+    "pdepend/pdepend": "2.1.0",
+    "sebastian/phpcpd": "*",
+    "phpunit/phpunit": "^4.8",
+    "drupal/console": "1.1"
+  },
+  "replace": {
+    "drupal/drupal": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"],
+      "web/profiles/contrib/social": [
+        "goalgorilla/open_social"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library",
+        "type:bower-asset",
+        "type:npm-asset"
+      ],
+      "drush/contrib/{$name}": ["type:drupal-drush"],
+      "scripts/{$name}": [
+        "goalgorilla/open_social_scripts"
+      ]
+    },
+    "enable-patching": true
+  },
+  "config": {
+    "process-timeout": 1200
+  }
+}
