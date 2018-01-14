@@ -53,7 +53,11 @@
     "drupal/replication": "^1.0@beta",
     "drupal/relaxed": "^1.0@beta",
     "drupal/pwa": "1.x-dev",
-    "drupal/paragraphs": "^1.2"
+    "drupal/paragraphs": "^1.2",
+    "drupal/bootstrap_paragraphs": "^2.0@beta",
+    "drupal/components": "^1.0",
+    "drupal/entity_reference_revisions": "^1.4",
+    "drupal/field_group": "^1.0"
   },
   "require-dev": {
     "jcalderonzumba/gastonjs": "~1.0.2",
