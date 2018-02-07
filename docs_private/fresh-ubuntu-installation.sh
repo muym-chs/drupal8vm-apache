@@ -68,7 +68,8 @@ chmod +x /usr/bin/composer
 mkdir dev_git && cd dev_git && git_clone https://github.com/RoverWire/virtualbox.git && cd virtualhost && chmod +x virtualhost.sh && sudo cp virtualhost.sh /usr/bin/virtualhost && chmod +x virtualhost-nginx.sh && sudo cp virtualhost-nginx.sh /usr/bin/virtualhost-nginx
 
 #### JS extensions ####
-sudo apt-get install npm
+sudo apt-get install npm nodejs-legacy
+sudo npm install -g gulp
 
 #### GITLAB GITHUB HOOKS ####
 https://gist.github.com/insoul/2348958
